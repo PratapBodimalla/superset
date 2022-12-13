@@ -17,30 +17,30 @@
  * under the License.
  */
 import { isFeatureEnabled, Preset, FeatureFlag } from '@superset-ui/core';
-import CalendarChartPlugin from '@superset-ui/legacy-plugin-chart-calendar';
-import ChordChartPlugin from '@superset-ui/legacy-plugin-chart-chord';
-import CountryMapChartPlugin from '@superset-ui/legacy-plugin-chart-country-map';
-import EventFlowChartPlugin from '@superset-ui/legacy-plugin-chart-event-flow';
-import HeatmapChartPlugin from '@superset-ui/legacy-plugin-chart-heatmap';
+// import CalendarChartPlugin from '@superset-ui/legacy-plugin-chart-calendar';
+// import ChordChartPlugin from '@superset-ui/legacy-plugin-chart-chord';
+// import CountryMapChartPlugin from '@superset-ui/legacy-plugin-chart-country-map';
+// import EventFlowChartPlugin from '@superset-ui/legacy-plugin-chart-event-flow';
+// import HeatmapChartPlugin from '@superset-ui/legacy-plugin-chart-heatmap';
 import HistogramChartPlugin from '@superset-ui/legacy-plugin-chart-histogram';
-import HorizonChartPlugin from '@superset-ui/legacy-plugin-chart-horizon';
-import MapBoxChartPlugin from '@superset-ui/legacy-plugin-chart-map-box';
-import PairedTTestChartPlugin from '@superset-ui/legacy-plugin-chart-paired-t-test';
-import ParallelCoordinatesChartPlugin from '@superset-ui/legacy-plugin-chart-parallel-coordinates';
+// import HorizonChartPlugin from '@superset-ui/legacy-plugin-chart-horizon';
+// import MapBoxChartPlugin from '@superset-ui/legacy-plugin-chart-map-box';
+// import PairedTTestChartPlugin from '@superset-ui/legacy-plugin-chart-paired-t-test';
+// import ParallelCoordinatesChartPlugin from '@superset-ui/legacy-plugin-chart-parallel-coordinates';
 import PartitionChartPlugin from '@superset-ui/legacy-plugin-chart-partition';
-import PivotTableChartPlugin from '@superset-ui/legacy-plugin-chart-pivot-table';
-import RoseChartPlugin from '@superset-ui/legacy-plugin-chart-rose';
-import SankeyChartPlugin from '@superset-ui/legacy-plugin-chart-sankey';
+// import PivotTableChartPlugin from '@superset-ui/legacy-plugin-chart-pivot-table';
+// import RoseChartPlugin from '@superset-ui/legacy-plugin-chart-rose';
+// import SankeyChartPlugin from '@superset-ui/legacy-plugin-chart-sankey';
 import SunburstChartPlugin from '@superset-ui/legacy-plugin-chart-sunburst';
 import TableChartPlugin from '@superset-ui/plugin-chart-table';
-import TreemapChartPlugin from '@superset-ui/legacy-plugin-chart-treemap';
+// import TreemapChartPlugin from '@superset-ui/legacy-plugin-chart-treemap';
 import { WordCloudChartPlugin } from '@superset-ui/plugin-chart-word-cloud';
-import WorldMapChartPlugin from '@superset-ui/legacy-plugin-chart-world-map';
+// import WorldMapChartPlugin from '@superset-ui/legacy-plugin-chart-world-map';
 import {
   AreaChartPlugin,
   BarChartPlugin,
   BubbleChartPlugin,
-  BulletChartPlugin,
+  // BulletChartPlugin,
   CompareChartPlugin,
   DistBarChartPlugin,
   DualLineChartPlugin,
@@ -61,13 +61,13 @@ import {
   EchartsTimeseriesScatterChartPlugin,
   EchartsTimeseriesSmoothLineChartPlugin,
   EchartsTimeseriesStepChartPlugin,
-  EchartsGraphChartPlugin,
-  EchartsGaugeChartPlugin,
+  // EchartsGraphChartPlugin,
+  // EchartsGaugeChartPlugin,
   EchartsRadarChartPlugin,
   EchartsFunnelChartPlugin,
   EchartsTreemapChartPlugin,
   EchartsMixedTimeseriesChartPlugin,
-  EchartsTreeChartPlugin,
+  // EchartsTreeChartPlugin,
 } from '@superset-ui/plugin-chart-echarts';
 import {
   SelectFilterPlugin,
@@ -78,7 +78,7 @@ import {
   GroupByFilterPlugin,
 } from 'src/filters/components';
 import { PivotTableChartPlugin as PivotTableChartPluginV2 } from '@superset-ui/plugin-chart-pivot-table';
-import { HandlebarsChartPlugin } from '@superset-ui/plugin-chart-handlebars';
+// import { HandlebarsChartPlugin } from '@superset-ui/plugin-chart-handlebars';
 import FilterBoxChartPlugin from '../FilterBox/FilterBoxChartPlugin';
 import TimeTableChartPlugin from '../TimeTable';
 
@@ -100,44 +100,44 @@ export default class MainPreset extends Preset {
         new BigNumberTotalChartPlugin().configure({ key: 'big_number_total' }),
         new EchartsBoxPlotChartPlugin().configure({ key: 'box_plot' }),
         new BubbleChartPlugin().configure({ key: 'bubble' }),
-        new BulletChartPlugin().configure({ key: 'bullet' }),
-        new CalendarChartPlugin().configure({ key: 'cal_heatmap' }),
-        new ChordChartPlugin().configure({ key: 'chord' }),
+        // new BulletChartPlugin().configure({ key: 'bullet' }),
+        // new CalendarChartPlugin().configure({ key: 'cal_heatmap' }),
+        // new ChordChartPlugin().configure({ key: 'chord' }),
         new CompareChartPlugin().configure({ key: 'compare' }),
-        new CountryMapChartPlugin().configure({ key: 'country_map' }),
+        // new CountryMapChartPlugin().configure({ key: 'country_map' }),
         new DistBarChartPlugin().configure({ key: 'dist_bar' }),
         new DualLineChartPlugin().configure({ key: 'dual_line' }),
-        new EventFlowChartPlugin().configure({ key: 'event_flow' }),
+        // new EventFlowChartPlugin().configure({ key: 'event_flow' }),
         new FilterBoxChartPlugin().configure({ key: 'filter_box' }),
         new EchartsFunnelChartPlugin().configure({ key: 'funnel' }),
         new EchartsTreemapChartPlugin().configure({ key: 'treemap_v2' }),
-        new EchartsGaugeChartPlugin().configure({ key: 'gauge_chart' }),
-        new EchartsGraphChartPlugin().configure({ key: 'graph_chart' }),
+        // new EchartsGaugeChartPlugin().configure({ key: 'gauge_chart' }),
+        // new EchartsGraphChartPlugin().configure({ key: 'graph_chart' }),
         new EchartsRadarChartPlugin().configure({ key: 'radar' }),
         new EchartsMixedTimeseriesChartPlugin().configure({
           key: 'mixed_timeseries',
         }),
-        new HeatmapChartPlugin().configure({ key: 'heatmap' }),
+        // new HeatmapChartPlugin().configure({ key: 'heatmap' }),
         new HistogramChartPlugin().configure({ key: 'histogram' }),
-        new HorizonChartPlugin().configure({ key: 'horizon' }),
+        // new HorizonChartPlugin().configure({ key: 'horizon' }),
         new LineChartPlugin().configure({ key: 'line' }),
         new LineMultiChartPlugin().configure({ key: 'line_multi' }),
-        new MapBoxChartPlugin().configure({ key: 'mapbox' }),
-        new PairedTTestChartPlugin().configure({ key: 'paired_ttest' }),
-        new ParallelCoordinatesChartPlugin().configure({ key: 'para' }),
+        // new MapBoxChartPlugin().configure({ key: 'mapbox' }),
+        // new PairedTTestChartPlugin().configure({ key: 'paired_ttest' }),
+        // new ParallelCoordinatesChartPlugin().configure({ key: 'para' }),
         new PartitionChartPlugin().configure({ key: 'partition' }),
         new EchartsPieChartPlugin().configure({ key: 'pie' }),
-        new PivotTableChartPlugin().configure({ key: 'pivot_table' }),
+        // new PivotTableChartPlugin().configure({ key: 'pivot_table' }),
         new PivotTableChartPluginV2().configure({ key: 'pivot_table_v2' }),
-        new RoseChartPlugin().configure({ key: 'rose' }),
-        new SankeyChartPlugin().configure({ key: 'sankey' }),
+        // new RoseChartPlugin().configure({ key: 'rose' }),
+        // new SankeyChartPlugin().configure({ key: 'sankey' }),
         new SunburstChartPlugin().configure({ key: 'sunburst' }),
         new TableChartPlugin().configure({ key: 'table' }),
         new TimePivotChartPlugin().configure({ key: 'time_pivot' }),
         new TimeTableChartPlugin().configure({ key: 'time_table' }),
-        new TreemapChartPlugin().configure({ key: 'treemap' }),
+        // new TreemapChartPlugin().configure({ key: 'treemap' }),
         new WordCloudChartPlugin().configure({ key: 'word_cloud' }),
-        new WorldMapChartPlugin().configure({ key: 'world_map' }),
+        // new WorldMapChartPlugin().configure({ key: 'world_map' }),
         new EchartsAreaChartPlugin().configure({
           key: 'echarts_area',
         }),
@@ -164,9 +164,9 @@ export default class MainPreset extends Preset {
         new TimeFilterPlugin().configure({ key: 'filter_time' }),
         new TimeColumnFilterPlugin().configure({ key: 'filter_timecolumn' }),
         new TimeGrainFilterPlugin().configure({ key: 'filter_timegrain' }),
-        new EchartsTreeChartPlugin().configure({ key: 'tree_chart' }),
-        new HandlebarsChartPlugin().configure({ key: 'handlebars' }),
         ...experimentalplugins,
+        // new EchartsTreeChartPlugin().configure({ key: 'tree_chart' }),
+        // new HandlebarsChartPlugin().configure({ key: 'handlebars' }),
       ],
     });
   }

@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pgsanity/__init__.py
+pgsanity/ecpg.py
+pgsanity/pgsanity.py
+pgsanity/sqlprep.py
+pgsanity.egg-info/PKG-INFO
+pgsanity.egg-info/SOURCES.txt
+pgsanity.egg-info/dependency_links.txt
+pgsanity.egg-info/entry_points.txt
+pgsanity.egg-info/top_level.txt
+test/test_ecpg.py
+test/test_pgsanity.py
+test/test_sqlprep.py
