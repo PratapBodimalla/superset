@@ -26,6 +26,9 @@ export const D3_FORMAT_DOCS = t(
 // input choices & options
 export const D3_FORMAT_OPTIONS: [string, string][] = [
   [NumberFormats.SMART_NUMBER, t('Adaptive formatting')],
+  ['CURRENCY_INDIA', t('INR')],
+  ['UOM_INDIA_HECTARES', t('Hectares')],
+  ['UOM_INDIA_TONNES', t('Tonnes')],
   ['~g', t('Original value')],
   [',d', ',d (12345.432 => 12,345)'],
   ['.1s', '.1s (12345.432 => 10k)'],

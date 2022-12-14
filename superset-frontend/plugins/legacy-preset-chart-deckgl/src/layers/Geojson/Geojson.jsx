@@ -131,6 +131,7 @@ export function getLayer(formData, payload, onAddFilter, setTooltip) {
     getFillColor,
     getLineWidth: fd.line_width || 1,
     getLineColor,
+    getText: f => f.properties.name,
     ...commonLayerProps(fd, setTooltip, setTooltipContent),
   });
 }
@@ -182,7 +183,6 @@ class DeckGLGeoJson extends React.Component {
     }
 
     const layer = getLayer(formData, payload, onAddFilter, this.setTooltip);
-
     return (
       <DeckGLContainerStyledWrapper
         ref={this.containerRef}

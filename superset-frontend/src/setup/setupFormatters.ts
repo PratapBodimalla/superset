@@ -24,12 +24,49 @@ import {
   getTimeFormatterRegistry,
   smartDateFormatter,
   smartDateVerboseFormatter,
+  createD3NumberFormatter,
 } from '@superset-ui/core';
 
 export default function setupFormatters() {
   getNumberFormatterRegistry()
     // Add shims for format strings that are deprecated or common typos.
     // Temporary solution until performing a db migration to fix this.
+    .registerValue(
+      'CURRENCY_INDIA',
+      createD3NumberFormatter({
+        locale: {
+          decimal: '.',
+          thousands: ',',
+          grouping: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+          currency: ['₹', ''],
+        },
+        formatString: '$,.2f',
+      }),
+    )
+    .registerValue(
+      'UOM_INDIA_HECTARES',
+      createD3NumberFormatter({
+        locale: {
+          decimal: '.',
+          thousands: ',',
+          grouping: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+          currency: ['', ' Hectares'],
+        },
+        formatString: '$,.2f',
+      }),
+    )
+    .registerValue(
+      'UOM_INDIA_TONNES',
+      createD3NumberFormatter({
+        locale: {
+          decimal: '.',
+          thousands: ',',
+          grouping: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+          currency: ['', ' Tonnes'],
+        },
+        formatString: '$,.2f',
+      }),
+    )
     .registerValue(',0', getNumberFormatter(',.4~f'))
     .registerValue('null', getNumberFormatter(',.4~f'))
     .registerValue('%', getNumberFormatter('.0%'))
